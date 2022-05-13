@@ -1,0 +1,223 @@
+* {
+    margin: 0;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+/* NAVIGATION BAR */
+
+div.navigation {
+    padding: 0 25px;
+    background-color: slategrey;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    color: white;
+}
+
+div.navigation h1.companyName {
+    font-family: 'Comfortaa';
+}
+
+div.navigation div.navBar ul {
+    float: right;
+    display: flex;
+    list-style: none;
+    padding: 0;
+}
+
+div.navigation div.navBar ul li a {
+    margin: 5px;
+    border-radius: 50%;
+    font-size: 1.8rem;
+    color: white;
+}
+
+/* MAIN */
+
+main div.about{
+    padding: 20px 20px 0 20px;
+}
+
+main p,
+main div.bullets,
+main div.bullets ul li {
+    margin: 15px 0;
+}
+
+main div.options {
+    margin: 30px 0;
+    display: flex;
+    justify-content: space-around;
+}
+
+main div.options div.optBasic,
+main div.options div.optUnlimited {
+    width: 45%;
+    text-align: center;
+}
+
+main div.options div.optBasic header {
+    color: white;
+    background-color: skyblue;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+main div.options div.optBasic header p,
+main div.options div.optUnlimited header p {
+    margin: 0;
+}
+
+main div.options div.optBasic {
+    background-color: lightcyan;
+}
+
+main div.options div.optBasic div.line {
+    height: 1px;
+    width: 85%;
+    background-color: skyblue;
+    margin: auto;
+}
+
+main div.options div.optBasic button.btnTry {
+    margin: 15px;
+    background: skyblue;
+    color: white;
+    border: none;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+main div.options div.optBasic button.btnTry:hover {
+    background: white;
+    color: skyblue;
+}
+
+main div.options div.optUnlimited header {
+    color: white;
+    background-color: gold;
+    padding: 20px 0;
+    margin-bottom: 20px;
+}
+
+main div.options div.optUnlimited {
+    background-color: lightgoldenrodyellow;
+}
+
+main div.options div.optUnlimited div.line {
+    height: 1px;
+    width: 85%;
+    background-color: gold;
+    margin: auto;
+}
+
+main div.options div.optUnlimited button.btnTry {
+    margin: 15px;
+    background: gold;
+    color: white;
+    border: none;
+    padding: 8px 5px;
+    cursor: pointer;
+}
+
+main div.options div.optUnlimited button.btnTry:hover {
+    background: white;
+    color: gold;
+}
+
+main div.contact {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+h1,
+main div.contact h2,
+footer {
+    font-weight: lighter;
+}
+
+main button.btnContact {
+    background-color: rgb(87, 160, 87);
+    border: none;
+    color: white;
+    border-radius: 5px;
+    padding: 12px 30px;
+    width: 180px;
+    margin: 15px 0 30px 0;
+    cursor: pointer;
+}
+
+main button.btnContact:hover {
+    color: black;
+}
+
+/* FOOTER */
+
+footer {
+    background: slategray;
+    height: 10vh;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+footer ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+}
+
+footer ul li a {
+    color: white;
+    padding: 5px;
+    font-size: 0.9rem;
+}
+
+footer ul li:first-of-type::after,
+footer ul li:nth-of-type(2)::after {
+    content: '|';
+}
+
+/* MEDIA QUERIES FOR MOBILE RESPONSIVENESS */
+
+@media only screen and (max-width: 390px) {
+    body div.navigation {
+        padding: 10px 0;
+        flex-direction: column;
+    }
+
+    body div.navigation div.navLine {
+        height: 2px;
+        width: 90%;
+        background-color: white;
+        margin: auto;
+    }
+
+    main div.options {
+        flex-direction: column;
+    }
+    
+    main div.options div.optBasic,
+    main div.options div.optUnlimited {
+        width: 85%;
+        margin: auto;
+    }
+    
+    main div.options div.optBasic {
+        margin-bottom: 20px;
+    }
+
+    main .contact h2.learn {
+        display: none;
+    }
+
+    main .contact button.btnContact {
+        width: 100%;
+        margin: 0;
+        border-radius: 0;
+    }
+  }
